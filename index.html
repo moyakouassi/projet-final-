@@ -239,23 +239,24 @@
 </body>
 </html>
 
-// Exemple : Affiche un message de bienvenue
 window.addEventListener('DOMContentLoaded', () => {
-    alert('Bienvenue sur mon portfolio !');
+  alert('Bienvenue sur mon portfolio !');
 });
 
-// Exemple : Validation simple du formulaire
-function validateForm() {
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
 
-    if(name === "" || email === "") {
-        alert("Veuillez remplir tous les champs du formulaire.");
-        return false;
-    }
-    alert("Formulaire envoyé avec succès !");
-    return true;
+function validateForm() {
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+
+  if(name === "" || email === "") {
+    alert("Veuillez remplir tous les champs du formulaire.");
+    return false;
+  }
+
+  alert("Formulaire envoyé avec succès !");
+  return true;
 }
+
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -455,8 +456,8 @@ function validateForm() {
 
 /* Reset basique */
 * {
-    margin: 5;
-    padding: 5;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -493,8 +494,8 @@ main {
 
 .profile-img {
     width: 200px;
-     border-radius: 5; 
-     border: 0px solid #e3efe3;
+     border-radius: 5px; 
+     border: 15px solid #e3efe3;
     display: block;
     position: absolute;
     top: 15px;
