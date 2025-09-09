@@ -3,74 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mes Hobbies</title>
-    <link rel="stylesheet" href="style.css">
-</head><link rel="stylesheet" href="style.css">
-
-<body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="about.html">À propos</a></li>
-            <li><a href="skills.html">Compétences</a></li>
-            <li><a href="projects.html">Projets</a></li>
-            <li><a href="hobbies.html">Hobbies</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-
-    <h1>Mes Hobbies & Activités sportives</h1>
-    <ul>
-        <li>Football</li>
-        <li>Lecture</li>
-        <li>Voyages</li>
-        <li>Musique</li>
-    </ul>
-</body>
-</html>
-
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Accueil</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <h1>Bienvenue sur mon Portfolio</h1>
-        <nav>
-            <a href="index.html">Accueil</a>
-            <a href="about.html">À propos</a>
-            <a href="skills.html">Compétences</a>
-            <a href="hobbies.html">Hobbies</a>
-            <a href="projects.html">Projets</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
-
-    <main>
-        <section>
-            <h2>Je me présente!</h2>
-            <p>Bonjour, je m'appelle Kouassi Barakissa Christelle Moya. Je suis développeur web débutant et passionné par la création de sites interactifs et modernes.</p>
-            <img src="photo-profil.jpg" alt="Photo de profil" class="profile-img">
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 Kouassi Christelle. Tous droits réservés.</p>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
-</html>
-
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projets - Kouassi Christelle</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
@@ -238,6 +170,24 @@
     </script>
 </body>
 </html>
+
+window.addEventListener('DOMContentLoaded', () => {
+  alert('Bienvenue sur mon portfolio !');
+});
+
+
+function validateForm() {
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+
+  if(name === "" || email === "") {
+    alert("Veuillez remplir tous les champs du formulaire.");
+    return false;
+  }
+
+  alert("Formulaire envoyé avec succès !");
+  return true;
+}
 
 window.addEventListener('DOMContentLoaded', () => {
   alert('Bienvenue sur mon portfolio !');
@@ -752,6 +702,191 @@ footer {
                 successMessage.style.display = 'none';
             }, 5000);
         });
+    </script>
+</body>
+</html>
+
+<a href="https://moyakouassi.github.io/projet-final-/" target="_blank">CLIQUEZ ICI!</a>
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes Hobbies</title>
+    <link rel="stylesheet" href="style.css">
+</head><link rel="stylesheet" href="style.css">
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="skills.html">Compétences</a></li>
+            <li><a href="projects.html">Projets</a></li>
+            <li><a href="hobbies.html">Hobbies</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <h1>Mes Hobbies & Activités sportives</h1>
+    <ul>
+        <li>Football</li>
+        <li>Lecture</li>
+        <li>Voyages</li>
+        <li>Musique</li>
+    </ul>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil - Kouassi Christelle</title>
+    <style>
+        /* Reset basique */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            background-color: #ffffff;
+            color: #7eb499;
+        }
+
+        header {
+            background-color: #4d7542;
+            color: rgb(119, 213, 98);
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: rgb(188, 203, 213);
+            margin: 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 60px;
+            max-width: 700px;
+            margin: auto;
+        }
+
+        .presentation {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 100px;
+             gap: 50px;
+        }
+
+        .profile-img {
+      width: 150px;          
+    height: 150px;          
+    object-fit: cover;      
+    border-radius: 10px; 
+        }
+
+        .intro-text {
+            max-width: 600px;
+        }
+
+        footer {
+            background-color: #7bad6b;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 10px;
+        }
+
+        /* Formulaire de contact */
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+        }
+
+        .contact input, .contact button {
+            margin-bottom: 10px;
+            padding: 8px;
+            font-size: 16px;
+        }
+
+        .contact button {
+            background-color: #4d7542;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .contact button:hover {
+            background-color: #3b5a32;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Kouassi Christelle</h1>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="about.html">À propos</a>
+            <a href="skills.html">Compétences</a>
+            <a href="hobbies.html">Hobbies</a>
+            <a href="projects.html">Projets</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="presentation">
+            <!-- Photo de profil -->
+            <img src="Profile.jpg" class="profile-img" alt="Photo de profil">
+
+            <!-- Texte de présentation -->
+            <div class="intro-text">
+                <h2>Je me présente!</h2>
+                <p>Bonjour, je m'appelle <strong>Kouassi Barakissa Christelle Moya</strong>. Je suis développeur web débutant et passionné par la création de sites interactifs et modernes.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Kouassi Christelle</p>
+    </footer>
+
+    <!-- JS intégré -->
+    <script>
+        // Message de bienvenue
+        window.addEventListener('DOMContentLoaded', () => {
+            alert('Bienvenue sur mon portfolio !');
+        });
+
+        // Validation simple du formulaire
+        function validateForm() {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+
+            if(name === "" || email === "") {
+                alert("Veuillez remplir tous les champs du formulaire.");
+                return false;
+            }
+
+            alert("Formulaire envoyé avec succès !");
+            return true;
+        }
     </script>
 </body>
 </html>
