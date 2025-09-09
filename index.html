@@ -403,6 +403,13 @@ function validateForm() {
     </script>
 </body>
 </html>
+<div class="header">
+    <img src="Profile.jpg" class="profile-img" alt="Photo de profil">
+    <div class="welcome-text">
+        <h1>Bienvenue sur mon portfolio</h1>
+        <p>Voici un texte d’accueil...</p>
+    </div>
+</div>
 
 /* Reset basique */
 * {
@@ -417,14 +424,12 @@ body {
     background-color: #ffffff;
     color: #7eb499;
 }
-
-header {
-    background-color: #4d7542;
-    color: rgb(119, 213, 98);
-    padding: 20px 0;
-    text-align: center;
+.header {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
 }
-
 nav a {
     color: rgb(188, 203, 213);
     margin: 15px;
@@ -442,14 +447,18 @@ main {
     margin: auto;
 }
 
+.header {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+}
+
 .profile-img {
     width: 200px;
-     border-radius: 5px; 
-     border: 0px solid #e3efe3;
-    display: block;
-    position: absolute;
-    top: 15px;
-    left: 100px; 
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
 }
 
 footer {
